@@ -1,0 +1,6 @@
+
+
+<input id="accno" type="text" placeholder="toacc" #toAcc />
+<input id="accno" type="text" placeholder="fromacc" #fromAcc />
+<input id="amount" type="text" placeholder="amount" #amount />
+<button (click)="onTransferAccount(toAcc.value,fromAcc.value,amount.value)">transfer</button>

@@ -1,0 +1,21 @@
+
+<button (click)="getAllData()">getall</button>
+
+<table>
+  <thead>
+    <tr>
+      <td>name</td>
+      <td>accno</td>
+      <td>accbal</td>
+      <td>credit</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of allaccount">
+      <td>{{item.name}}</td>
+      <td>{{item.accno}}</td>
+      <td>{{item.accbal}}</td>
+      <td>{{item.credit}}</td>
+    </tr>
+  </tbody>
+</table>
