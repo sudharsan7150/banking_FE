@@ -1,5 +1,5 @@
-
-<button (click)="getAllData()">getall</button>
+<input id="toacc" type="text" placeholder="toacc" #toAcc />
+<button (click)="onGetTransaction(toAcc.value)">get-transaction</button>
 
 <table>
   <thead>
@@ -11,7 +11,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let item of transaction">
+    <tr *ngFor="let item of history ">
       <td>{{item.fromacc}}</td>
       <td>{{item.toacc}}</td>
       <td>{{item.amount}}</td>

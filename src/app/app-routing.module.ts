@@ -4,13 +4,14 @@ import { AllAccountComponent } from './all-account/all-account.component';
 import { GetAccountComponent } from './get-account/get-account.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { TransferComponent } from './transfer/transfer.component';
+import { GetTransactionComponent } from './get-transaction/get-transaction.component';
 
 const menu: Routes = [
   {path:'all-account',component: AllAccountComponent},
   {path:'get-account',component: GetAccountComponent},
   {path:'transaction',component: TransactionComponent},
-  {path:'transfer',component: TransferComponent}
-
+  {path:'transfer',component: TransferComponent},
+  {path:'get-transaction',component:GetTransactionComponent}
 ];
 
 @NgModule({
